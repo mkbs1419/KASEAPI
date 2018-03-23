@@ -13,6 +13,7 @@ KASE 資料串接使用，包含一個資料顯示網頁及兩個API接口。
 
 資料表包含 **demov3** 及 **tag_data**
 當使用API寫入資料時，會先寫入 **demov3** ，並更新 **tag_data** 內的資訊以供output使用。
+因為只需撈取最新狀態資料，這樣做可以大大減低撈取資料時系統的消耗及提升反應速度。
 
 ```sql
 資料表結構 `demov3`
@@ -33,3 +34,5 @@ KASE 資料串接使用，包含一個資料顯示網頁及兩個API接口。
   `value` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `time_stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ```
+
+**部署方式
