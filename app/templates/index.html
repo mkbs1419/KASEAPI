@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>Viewer</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+  <h1>API Test Server</h1>
+  <h2>data viewer</h2>
+  <form action="/clean/" method="post">
+    <button name="clsBtn" type="submit">Clean DB</button>
+  </form>
+
+
+  <!-- <table style="border:3px #FFD382 dashed;" cellpadding="10" border='1'> -->
+  <table id="customers">
+    <tr>
+      <th> _id </th>
+      <th> tag </th>
+      <th> description </th>
+      <th> type </th>
+      <th> value </th>
+      <th> time_stamp </th>
+    </tr>
+    {%- for row_index in range(JSON_data|count) %}
+    <tr>
+      <td>{{ JSON_data[row_index]._id }}</td>
+      <td>{{ JSON_data[row_index].tag }}</td>
+      <td>{{ JSON_data[row_index].description|safe }}</td>
+      <td>{{ JSON_data[row_index].type }}</td>
+      <td>{{ JSON_data[row_index].value }}</td>
+      <td>{{ JSON_data[row_index].time_stamp }}</td>
+    </tr>
+    {%- endfor %}
+  </table>
+</body>
+
+<style>
+  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+  }
+
+  #customers td,
+  #customers th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    /* height: 50px; */
+  }
+
+  #customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  #customers tr:hover {
+    background-color: #ddd;
+  }
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    height: 50px;
+  }
+</style>
+
+</html>

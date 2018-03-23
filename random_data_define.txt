@@ -1,0 +1,25 @@
+1  ele_val	電錶數值	int	2142 ++
+2  out_tem	送風溫度	float	4 ~ 6°C
+3  in_temp	回風溫度	float	10 ~ 12°C
+4  env_tem	環境溫度	float	25 ~ 28°C
+
+5  ahu_co2	CO2偵測		int	400 ~ 1000ppm
+6  ahu_pre	靜壓感測	int	760 ~ 1200 mmHg
+7  ahu_two	二通閥		int	0 ~ 100 %
+8  ahu_inv	變頻器		int	0 ~ 100 %
+9  ahu_air	外氣風門	int	0 ~ 100 %
+10 ahu_sta	AHU狀態		bool	0/1
+11 ahu_loa	AHU過載		bool	0/1
+12 ahu_smo	AHU風管偵煙	bool	0/1
+13 ahu_fpr	AHU濾網壓差	int	0 ~ 1000mmHg
+
+14 light	照明狀態	bool	0/1
+
+15 wind_s	EF排風 狀態	bool	0/1
+16 wind_l	EF排風 過載	bool	0/1
+
+17 door		門位監視	bool	0/1
+18 emc		緊急按鈕	bool	0/1
+
+19 smoke_s	排煙 狀態	bool	0/1
+20 smoke_l	排煙 過載	bool	0/1
