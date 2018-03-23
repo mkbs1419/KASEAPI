@@ -11,6 +11,9 @@ KASE 資料串接使用，包含一個資料顯示網頁及兩個API接口。
 
 ### 資料表結構
 
+資料表包含 **demov3** 及 **tag_data**
+當使用API寫入資料時，會先寫入 **demov3** ，並更新 **tag_data** 內的資訊以供output使用。
+
 ```sql
 資料表結構 `demov3`
   `_id` int(11) NOT NULL,
