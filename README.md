@@ -2,6 +2,9 @@
 
 KASE 資料串接使用，包含一個資料顯示網頁及兩個API接口。
 
+DEMO<http://997052ba.ap.ngrok.io>
+![Dashboard][screenshot]
+
 ### 資料庫資訊
 
 ```sql
@@ -35,4 +38,9 @@ KASE 資料串接使用，包含一個資料顯示網頁及兩個API接口。
   `time_stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ```
 
-**部署方式
+## 部署方式
+
+
+
+
+[screenshot]:https://raw.githubusercontent.com/mkbs1419/Esuns_IT_Dashboard/master/pic/2018-03-06_113236.png "資料檢視器"
