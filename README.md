@@ -2,7 +2,7 @@
 
 KASE 資料串接使用，包含一個資料顯示網頁及兩個API接口。
 
-DEMO<http://997052ba.ap.ngrok.io>
+[LIVE DEMO][demo_link]
 ![Dashboard][screenshot]
 
 ### 資料庫資訊
@@ -42,5 +42,5 @@ DEMO<http://997052ba.ap.ngrok.io>
 
 
 
-
-[screenshot]:https://raw.githubusercontent.com/mkbs1419/Esuns_IT_Dashboard/master/pic/2018-03-06_113236.png "資料檢視器"
+[demo_link]:http://997052ba.ap.ngrok.io
+[screenshot]:https://raw.githubusercontent.com/mkbs1419/KASEAPI/master/pic/175229.png "資料檢視器"
