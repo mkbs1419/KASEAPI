@@ -40,7 +40,60 @@ KASE 資料串接使用，包含一個資料顯示網頁及兩個API接口。
 
 ## 部署方式
 
+API default endpoint
+
+```
+http://localhost:12200/
+```
 
 
-[demo_link]:http://997052ba.ap.ngrok.io
+```
+POST   http://localhost:12200/send
+```
+Request headers
+| Request header | Description      |
+| -------------- | ---------------- |
+| Content-Type   | application/json |
+
+Request body
+| Field  | Type    | Required | Description           |
+| ------ | ------- | -------- | --------------------- |
+| name   | String  | Yes      | Device Name           |
+| status | Boolean | Yes      | Device Online/Offline |
+| value  | Float   | Yes      | Device Value          |
+
+Response
+```JSON
+Example JSON response
+{
+    "name": "device_name",
+    "response": "OK",
+    "status": true,
+    "value": 123.456
+} 
+```
+
+```
+GET   http://localhost:12200/data
+```
+Response
+```JSON
+Example JSON response
+{
+    "count": 1,
+    "status": [
+      {
+        "description": "8F\u7a7a\u8abf\u7bb1\u96fb\u9336\u6578\u503c", 
+        "tag": "8AHU:KWH", 
+        "time_stamp": "Mon, 26 Mar 2018 16:53:36 GMT", 
+        "type": "string", 
+        "value": "4970.52"
+      }
+    ]
+} 
+```
+
+
+
+[demo_link]:http://997052ba.ap.ngrok.io "LIVE DEMO"
 [screenshot]:https://raw.githubusercontent.com/mkbs1419/KASEAPI/master/pic/175229.png "資料檢視器"
