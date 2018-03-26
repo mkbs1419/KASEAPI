@@ -46,7 +46,7 @@ API default endpoint
 http://localhost:12200/
 ```
 
-
+### /send
 ```
 POST   http://localhost:12200/send
 ```
@@ -73,6 +73,7 @@ Example JSON response
 } 
 ```
 
+### /data
 ```
 GET   http://localhost:12200/data
 ```
