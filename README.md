@@ -38,12 +38,12 @@ KASE 資料串接使用，包含一個資料顯示網頁及兩個API接口。
   `time_stamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ```
 
-## 部署方式
+## Installation
 
 1. **kase.sql** 
 2. **run.py**
 
-## 使用說明
+## Usage
 
 API default endpoint
 
