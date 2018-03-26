@@ -55,12 +55,15 @@ http://localhost:12200/
 ```
 POST   http://localhost:12200/send
 ```
+
 Request headers
+
 | Request header | Description      |
 | -------------- | ---------------- |
 | Content-Type   | application/json |
 
 Request body
+
 | Field  | Type    | Required | Description           |
 | ------ | ------- | -------- | --------------------- |
 | name   | String  | Yes      | Device Name           |
@@ -68,6 +71,7 @@ Request body
 | value  | Float   | Yes      | Device Value          |
 
 Response
+
 ```JSON
 Example JSON response
 {
@@ -79,10 +83,13 @@ Example JSON response
 ```
 
 ### /data
+
 ```
 GET   http://localhost:12200/data
 ```
+
 Response
+
 ```JSON
 Example JSON response
 {
