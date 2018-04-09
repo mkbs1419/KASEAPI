@@ -109,4 +109,4 @@ Example JSON response
 
 
 [demo_link]:http://997052ba.ap.ngrok.io "LIVE DEMO"
-[screenshot]:https://raw.githubusercontent.com/mkbs1419/KASEAPI/master/pic/175229.png "資料檢視器"
+[screenshot]:https://i.imgur.com/ZSW63Tj.png "資料檢視器"
